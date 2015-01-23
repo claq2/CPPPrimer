@@ -2,12 +2,11 @@
 
 int main()
 {
-	int sum = 0, val = 1;
-	while (val <= 10) {
-		sum += val;
-		++val;
+	int sum = 0;
+	for (size_t i = -100; i < 100; ++i) {
+		sum += 1;
 	}
-	std::cout << "Sum of 1 to 10 inclusive is "
+	std::cout << "Sum of -100 to 100 inclusive is "
 			  << sum << std::endl;
 	return 0;
 }
